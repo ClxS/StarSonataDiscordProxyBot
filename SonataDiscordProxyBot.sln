@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonataDiscordProxyBot", "SonataDiscordProxyBot\SonataDiscordProxyBot.csproj", "{C7A18DBD-5A9C-4A75-9E37-3359A7D152E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarSonataApi", "StarSonataApi\StarSonataApi.csproj", "{7B6298A8-224E-499A-A73F-47BF82BED83D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordApi", "DiscordApi\DiscordApi.csproj", "{56C3DE71-517D-466C-86D4-3D496BC02837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A18DBD-5A9C-4A75-9E37-3359A7D152E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A18DBD-5A9C-4A75-9E37-3359A7D152E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A18DBD-5A9C-4A75-9E37-3359A7D152E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A18DBD-5A9C-4A75-9E37-3359A7D152E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6298A8-224E-499A-A73F-47BF82BED83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6298A8-224E-499A-A73F-47BF82BED83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6298A8-224E-499A-A73F-47BF82BED83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6298A8-224E-499A-A73F-47BF82BED83D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C3DE71-517D-466C-86D4-3D496BC02837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C3DE71-517D-466C-86D4-3D496BC02837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C3DE71-517D-466C-86D4-3D496BC02837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C3DE71-517D-466C-86D4-3D496BC02837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
