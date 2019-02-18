@@ -87,7 +87,7 @@
                     try
                     {
                         // ssApi.SendImpersonationChatAsync(channelMapping.Game, msg.Author.Name, msg.Text);
-                        ssApi.SendChatAsync($"<{msg.Author.Name}>: {msg.Text}", MessageChannel.Moderator);
+                        ssApi.SendChatAsync($"<{msg.Author.Name}>: {msg.Text}", (MessageChannel)Enum.Parse(typeof(MessageChannel), channelMapping.Game));
                     }
                     catch (Exception)
                     {
@@ -115,11 +115,6 @@
                          if (channelMapping == null)
                          {
                              return;
-                         }
-
-                         if (channelMapping.Discord != 375727535281012736)
-                         {
-                             throw new Exception("WHAT?! This shouldn't happen.");
                          }
 
                          try
