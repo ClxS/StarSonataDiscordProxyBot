@@ -74,6 +74,11 @@
                 new TextMessageOut(new ChatMessage { Channel = channel, Message = message }));
         }
 
+        public void SendMessage(IOutgoingMessage message)
+        {
+            StarSonataCommClient.Client.SendMessage(message);
+        }
+
         public void SendImpersonationChatAsync(string channel, string username, string message)
         {
             StarSonataCommClient.Client.SendMessage(

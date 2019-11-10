@@ -16,6 +16,8 @@
 
         public string GameUsername { get; set; }
 
+        public string CharacterName { get; set; }
+
         public string ServerUrl { get; set; }
     }
 }

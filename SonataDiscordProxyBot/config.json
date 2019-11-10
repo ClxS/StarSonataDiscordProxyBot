@@ -3,7 +3,8 @@
 	"BotDiscordId": "",
 	"DiscordToken": "",
 	"GameUsername": "",
-	"GamePassword": "",
+  "GamePassword": "",
+  "CharacterName": "", 
 	"CommandChannel": 0,
 	"ErrorChannel": 0,
 	"ChannelMappings": {

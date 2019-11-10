@@ -17,6 +17,7 @@
 
     using StarSonataApi;
     using StarSonataApi.Messages.Incoming;
+    using StarSonataApi.Messages.Outgoing;
     using StarSonataApi.Objects;
 
     public class Program
@@ -102,6 +103,24 @@
 
                         this.TryGameLoginAsync(ssApi, discordApi, settings).Forget();
                     }
+                });
+
+            // Login as the first available character
+            ssApi.WhenMessageReceived.Where(msg => msg is CharacterList).Subscribe(
+                msg =>
+                {
+                    var characterList = (CharacterList)msg;
+                    var character =
+                        characterList.Characters.FirstOrDefault(c =>
+                            c.Name.ToLower() == settings.CharacterName.ToLower());
+                    if (character == null)
+                    {
+                        character = characterList.Characters.First();
+                        Console.WriteLine($"Could not find character with name {settings.CharacterName}, falling back to first character ({character.Name})");
+                    }
+
+                    Console.WriteLine("Logging in as " + character.Name);
+                    ssApi.SendMessage(new SelectCharacter(character));
                 });
 
             ssApi.WhenMessageReceived.Where(m => !string.IsNullOrEmpty((m as TextMessage)?.Message?.Username))

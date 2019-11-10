@@ -1,6 +1,6 @@
 ﻿namespace StarSonataApi.Messages
 {
-    internal interface IOutgoingMessage
+    public interface IOutgoingMessage
     {
         byte[] GetOutData();
     }

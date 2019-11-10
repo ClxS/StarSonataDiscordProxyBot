@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    internal class SelectCharacter : IOutgoingMessage
+    public class SelectCharacter : IOutgoingMessage
     {
         public SelectCharacter(Character character)
         {
