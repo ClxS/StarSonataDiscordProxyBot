@@ -142,6 +142,14 @@
                     Console.WriteLine(
                         $"{textMessage.Message.Channel.ToString()} - {textMessage.Message.Username} - {textMessage.Message.Message}");
                 });
+
+            this.WhenMessageReceived.Where(msg => msg is LoginFail).Subscribe(
+                msg =>
+                {
+                    var loginMsg = (LoginFail)msg;
+                    Console.Error.WriteLine($"Star Sonata Login failed: {loginMsg.FailureReason}");
+                    Console.Error.WriteLine("Check you have the correct account name");
+                });
         }
     }
 }
