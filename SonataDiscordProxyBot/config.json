@@ -10,30 +10,14 @@
 	"ChannelMappings": {
 		"Game": [
 			{
-				"Game": "All",
-				"Discord": 0
-			},
-			{
-				"Game": "Trade",
-				"Discord": 0
-			},
-			{
-				"Game": "Help",
+				"Game": "Team",
 				"Discord": 0
 			}
 		],
 		"Discord": [
 			{
-				"Discord": 162979076695523331,
-				"Game": "Moderator"
-			},
-			{
-				"Discord": 240884462668218368,
-				"Game": "Moderator"
-			},
-			{
-				"Discord": 363533335345233921,
-				"Game": "Moderator"
+				"Discord": 0,
+				"Game": "Team"
 			}
 		]
 	}
